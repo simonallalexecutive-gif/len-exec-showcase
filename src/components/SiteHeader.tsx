@@ -36,9 +36,11 @@ export function SiteHeader() {
               to={item.to}
               className="text-black transition-colors hover:opacity-70"
               style={{
-                fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+                fontFamily: 'Georgia, "Times New Roman", serif',
                 fontSize: "16px",
                 letterSpacing: "1.7pt",
+                fontVariant: "normal",
+                textTransform: "none",
               }}
               activeProps={{ className: "text-foreground" }}
             >
@@ -66,9 +68,11 @@ export function SiteHeader() {
                 onClick={() => setOpen(false)}
                 className="py-3 text-black"
                 style={{
-                  fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+                  fontFamily: 'Georgia, "Times New Roman", serif',
                   fontSize: "16px",
                   letterSpacing: "1.7pt",
+                  fontVariant: "normal",
+                  textTransform: "none",
                 }}
               >
                 {item.label}
