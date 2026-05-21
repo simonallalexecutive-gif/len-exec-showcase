@@ -19,11 +19,12 @@ const team = [
     name: "Simon Allal",
     role: "Associé fondateur",
     bio: [
-      "Après avoir effectué ses études de Droit à l'Université Paris II Panthéon-Assas, Simon poursuit son parcours avec un LL.M. à New York et un Master 2 Arbitrage et Commerce International de l'Université de Versailles. Il se forme ensuite au sein de cabinets d'avocats d'affaires prestigieux en arbitrage et contentieux.",
-      "Au contact des praticiens et des dynamiques propres aux cabinets, il affine sa compréhension des trajectoires d'avocats, des équilibres d'association et des enjeux de carrière. Il s'oriente alors vers l'executive search et se forme pendant près de deux ans au sein d'un cabinet anglo-saxon reconnu.",
-      "Il rejoint ensuite W Executive en 2023, acteur de premier plan de l'executive search en Europe, afin d'y créer et développer la pratique parisienne dédiée au recrutement d'avocats d'affaires.",
-      "Il accompagne aujourd'hui collaborateurs, counsels et associés dans leurs évolutions professionnelles, à des moments clés de leurs trajectoires, avec une approche fondée sur l'écoute, la précision du conseil et une compréhension fine des environnements de marché. Il est également sollicité par des cabinets d'avocats pour les accompagner dans leur réflexion stratégique et leurs enjeux de structuration.",
-      "Son accompagnement repose sur un socle constant : éthique, loyauté, discrétion et engagement, des principes qui guident chacune de ses missions et la construction de relations durables avec les cabinets et les avocats qu'il accompagne.",
+      "Après ses études de Droit à l'Université Paris II Panthéon-Assas, Simon poursuit son parcours avec un LL.M. à New York et un Master 2 Arbitrage et Commerce International de l'Université de Versailles. Il se forme ensuite au sein de cabinets d'affaires en arbitrage et contentieux.",
+      "Au fil de ses expériences, il affine sa compréhension des trajectoires de marché et des équilibres d'association. Il s'oriente alors vers l'executive search et se forme au sein d'un cabinet anglo-saxon reconnu.",
+      "En 2023, il rejoint W Executive, acteur de premier plan en Europe, afin de créer et développer la pratique parisienne dédiée au recrutement d'avocats d'affaires.",
+      "En fondant Lennon Executive, Simon répond à une conviction simple : celle d'un executive search qui ne soit pas seulement un intermédiaire, mais un véritable partenaire de trajectoires, au service d'un marché qu'il connaît de l'intérieur.",
+      "Il accompagne au quotidien collaborateurs, counsels et associés dans leurs évolutions, et intervient également auprès des cabinets dans leurs réflexions stratégiques.",
+      "Son intervention repose sur un socle constant : éthique, loyauté, confiance et engagement.",
     ],
     credentials: [
       "LL.M., Cardozo Law School (New York)",
