@@ -25,11 +25,11 @@ function Index() {
           <div className="md:col-span-7">
             <p className="eyebrow">Executive Search · Legal</p>
             <h1 className="mt-8 font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
-              L'excellence du droit
+              Expertise.
               <br />
-              mérite une recherche
+              Confidentialité.
               <br />
-              <em className="not-italic text-accent">à sa hauteur.</em>
+              <em className="not-italic text-accent">Résultat.</em>
             </h1>
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               LENNON Executive est un cabinet de conseil stratégique et de chasse
