@@ -5,8 +5,11 @@ export function SiteFooter() {
     <footer className="mt-32 border-t border-border/60 bg-background">
       <div className="container-prose grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="font-serif text-2xl tracking-[0.18em]">
-            LENNON <span className="text-muted-foreground">EXECUTIVE</span>
+          <div className="font-serif text-2xl">
+            <span className="tracking-[0.22em]">LENNON</span>
+            <span className="ml-3 italic font-light tracking-wide text-muted-foreground">
+              Executive
+            </span>
           </div>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
             Conseil stratégique et chasse de têtes dédiés aux cabinets d'avocats
