@@ -25,8 +25,8 @@ export function SiteFooter() {
         <div>
           <p className="eyebrow mb-4">Navigation</p>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/activite" className="hover:text-foreground text-foreground/75">Activité</Link></li>
-            <li><Link to="/approche" className="hover:text-foreground text-foreground/75">Notre approche</Link></li>
+            <li><Link to="/activite" className="hover:text-foreground text-foreground/75">Expertise</Link></li>
+            <li><Link to="/approche" className="hover:text-foreground text-foreground/75">ADN</Link></li>
             <li><Link to="/equipe" className="hover:text-foreground text-foreground/75">Équipe</Link></li>
             <li><Link to="/contact" className="hover:text-foreground text-foreground/75">Contact</Link></li>
           </ul>
