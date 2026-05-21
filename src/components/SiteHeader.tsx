@@ -20,9 +20,9 @@ export function SiteHeader() {
           className="font-serif text-xl text-foreground"
           onClick={() => setOpen(false)}
         >
-          <span className="tracking-[0.22em]">LENNON</span>
-          <span className="ml-3 italic font-light tracking-wide text-foreground/70">
-            Executive
+          <span className="font-bold" style={{ letterSpacing: "1.7px" }}>LENNON</span>
+          <span className="ml-3 font-light text-foreground/70" style={{ letterSpacing: "1.7px" }}>
+            EXECUTIVE
           </span>
         </Link>
 
