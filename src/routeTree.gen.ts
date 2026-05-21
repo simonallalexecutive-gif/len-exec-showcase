@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as EquipeRouteImport } from './routes/equipe'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ApprocheRouteImport } from './routes/approche'
 import { Route as ActiviteRouteImport } from './routes/activite'
 import { Route as IndexRouteImport } from './routes/index'
@@ -17,6 +18,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const EquipeRoute = EquipeRouteImport.update({
   id: '/equipe',
   path: '/equipe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApprocheRoute = ApprocheRouteImport.update({
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/activite': typeof ActiviteRoute
   '/approche': typeof ApprocheRoute
+  '/contact': typeof ContactRoute
   '/equipe': typeof EquipeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/activite': typeof ActiviteRoute
   '/approche': typeof ApprocheRoute
+  '/contact': typeof ContactRoute
   '/equipe': typeof EquipeRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/activite': typeof ActiviteRoute
   '/approche': typeof ApprocheRoute
+  '/contact': typeof ContactRoute
   '/equipe': typeof EquipeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/activite' | '/approche' | '/equipe'
+  fullPaths: '/' | '/activite' | '/approche' | '/contact' | '/equipe'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/activite' | '/approche' | '/equipe'
-  id: '__root__' | '/' | '/activite' | '/approche' | '/equipe'
+  to: '/' | '/activite' | '/approche' | '/contact' | '/equipe'
+  id: '__root__' | '/' | '/activite' | '/approche' | '/contact' | '/equipe'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ActiviteRoute: typeof ActiviteRoute
   ApprocheRoute: typeof ApprocheRoute
+  ContactRoute: typeof ContactRoute
   EquipeRoute: typeof EquipeRoute
 }
 
@@ -76,6 +86,13 @@ declare module '@tanstack/react-router' {
       path: '/equipe'
       fullPath: '/equipe'
       preLoaderRoute: typeof EquipeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/approche': {
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ActiviteRoute: ActiviteRoute,
   ApprocheRoute: ApprocheRoute,
+  ContactRoute: ContactRoute,
   EquipeRoute: EquipeRoute,
 }
 export const routeTree = rootRouteImport
