@@ -36,7 +36,7 @@ function Index() {
               de têtes dédié aux acteurs du droit : cabinets d'avocats et
               directions juridiques.
             </p>
-            <p className="mt-6 ml-auto max-w-xl text-right text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textAlign: "justify", textAlignLast: "right" }}>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               Nous accompagnons les associés, dirigeants et experts dans les
               moments décisifs de leur trajectoire.
             </p>
