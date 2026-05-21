@@ -5,11 +5,16 @@ export function SiteFooter() {
     <footer className="mt-32 border-t border-border/60 bg-background">
       <div className="container-prose grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="font-serif text-2xl">
-            <span className="tracking-[0.22em] font-bold">LENNON</span>
-            <span className="ml-3 font-light tracking-wide">
-              Executive
-            </span>
+          <div
+            className="text-black"
+            style={{
+              fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+              fontSize: "16px",
+              letterSpacing: "1.7pt",
+              textTransform: "uppercase",
+            }}
+          >
+            LENNON EXECUTIVE
           </div>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
             Conseil stratégique et chasse de têtes dédiés aux cabinets d'avocats

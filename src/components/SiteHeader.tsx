@@ -17,13 +17,16 @@ export function SiteHeader() {
       <div className="container-prose flex h-20 items-center justify-between">
         <Link
           to="/"
-          className="font-serif text-xl text-foreground"
+          className="text-black"
+          style={{
+            fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+            fontSize: "16px",
+            letterSpacing: "1.7pt",
+            textTransform: "uppercase",
+          }}
           onClick={() => setOpen(false)}
         >
-          <span className="tracking-[0.22em] font-bold">LENNON</span>
-          <span className="ml-3 font-light tracking-wide">
-            Executive
-          </span>
+          LENNON EXECUTIVE
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">
