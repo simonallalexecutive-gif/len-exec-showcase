@@ -19,9 +19,11 @@ const team = [
     name: "Simon Allal",
     role: "Associé fondateur",
     bio: [
-      "Diplômé d'un LL.M. à l'Université Cardozo Law School de New York et du Master 2 Arbitrage et Commerce International de l'Université de Versailles Saint-Quentin (UVSQ), Simon a commencé sa carrière en cabinets d'avocats, en arbitrage international et contentieux.",
-      "Il se passionne par la suite pour les enjeux liés au conseil et à la gestion de carrière des avocats et rejoint un cabinet de recrutement anglo-saxon réputé.",
-      "Fort aujourd'hui d'une excellente connaissance du marché parisien, Simon accompagne les collaborateurs et associés à chaque étape dans leurs évolutions. Par son écoute, ses analyses et sa rigueur, il s'est forgé un réseau de confiance qu'il suit et entretient au long cours avec bienveillance et éthique.",
+      "Après avoir effectué ses études de Droit à l'Université Paris II Panthéon-Assas, Simon poursuit son parcours avec un LL.M. à New York et un Master 2 Arbitrage et Commerce International de l'Université de Versailles. Il se forme ensuite au sein de cabinets d'avocats d'affaires prestigieux en arbitrage et contentieux.",
+      "Au contact des praticiens et des dynamiques propres aux cabinets, il affine sa compréhension des trajectoires d'avocats, des équilibres d'association et des enjeux de carrière. Il s'oriente alors vers l'executive search et se forme pendant près de deux ans au sein d'un cabinet anglo-saxon reconnu.",
+      "Il rejoint ensuite W Executive en 2023, acteur de premier plan de l'executive search en Europe, afin d'y créer et développer la pratique parisienne dédiée au recrutement d'avocats d'affaires.",
+      "Il accompagne aujourd'hui collaborateurs, counsels et associés dans leurs évolutions professionnelles, à des moments clés de leurs trajectoires, avec une approche fondée sur l'écoute, la précision du conseil et une compréhension fine des environnements de marché. Il est également sollicité par des cabinets d'avocats pour les accompagner dans leur réflexion stratégique et leurs enjeux de structuration.",
+      "Son accompagnement repose sur un socle constant : éthique, loyauté, discrétion et engagement, des principes qui guident chacune de ses missions et la construction de relations durables avec les cabinets et les avocats qu'il accompagne.",
     ],
     credentials: [
       "LL.M., Cardozo Law School (New York)",
