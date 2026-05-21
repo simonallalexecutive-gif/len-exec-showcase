@@ -1,6 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import simon from "@/assets/simon.jpg";
-import olivia from "@/assets/olivia.jpg";
 
 export const Route = createFileRoute("/equipe")({
   component: EquipePage,
@@ -20,7 +18,6 @@ const team = [
   {
     name: "Simon Allal",
     role: "Associé fondateur",
-    image: simon,
     bio: [
       "Diplômé d'un LL.M. à l'Université Cardozo Law School de New York et du Master 2 Arbitrage et Commerce International de l'Université de Versailles Saint-Quentin (UVSQ), Simon a commencé sa carrière en cabinets d'avocats, en arbitrage international et contentieux.",
       "Il se passionne par la suite pour les enjeux liés au conseil et à la gestion de carrière des avocats et rejoint un cabinet de recrutement anglo-saxon réputé.",
@@ -36,7 +33,6 @@ const team = [
   {
     name: "Olivia Altar",
     role: "Associée fondatrice",
-    image: olivia,
     bio: [
       "Avocate au Barreau de Paris, Olivia est titulaire d'un Master 2 en Droit International de l'Université Paris II Panthéon-Assas ainsi que d'une Maîtrise des Sciences de Gestion de l'Université Dauphine-PSL.",
       "Elle a débuté sa carrière chez White & Case LLP avant de se spécialiser dans le recrutement juridique. Elle a dirigé pendant près de dix ans la division Legal, Tax & Compliance d'un cabinet de recrutement international de premier plan à Paris.",
@@ -88,16 +84,7 @@ function EquipePage() {
                 idx % 2 === 1 ? "md:order-2" : ""
               }`}
             >
-              <div className="aspect-[4/5] overflow-hidden border border-border/60">
-                <img
-                  src={m.image}
-                  alt={m.name}
-                  width={800}
-                  height={1000}
-                  loading="lazy"
-                  className="h-full w-full object-cover grayscale"
-                />
-              </div>
+              <div className="aspect-[4/5] border border-border/60 bg-secondary/40" />
             </div>
             <div className="md:col-span-7">
               <p className="eyebrow">{m.role}</p>
