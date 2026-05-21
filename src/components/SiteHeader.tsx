@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const nav = [
-  { to: "/activite", label: "Activité" },
-  { to: "/approche", label: "Notre approche" },
+  { to: "/activite", label: "Expertise" },
+  { to: "/approche", label: "ADN" },
   { to: "/equipe", label: "Équipe" },
   { to: "/contact", label: "Contact" },
 ] as const;
