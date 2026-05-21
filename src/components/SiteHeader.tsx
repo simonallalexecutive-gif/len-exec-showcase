@@ -34,7 +34,12 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-[0.78rem] uppercase tracking-[0.22em] text-foreground/75 transition-colors hover:text-foreground"
+              className="text-black transition-colors hover:opacity-70"
+              style={{
+                fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+                fontSize: "16px",
+                letterSpacing: "1.7pt",
+              }}
               activeProps={{ className: "text-foreground" }}
             >
               {item.label}
@@ -59,7 +64,12 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-3 text-sm uppercase tracking-[0.22em] text-foreground/80"
+                className="py-3 text-black"
+                style={{
+                  fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
+                  fontSize: "16px",
+                  letterSpacing: "1.7pt",
+                }}
               >
                 {item.label}
               </Link>
