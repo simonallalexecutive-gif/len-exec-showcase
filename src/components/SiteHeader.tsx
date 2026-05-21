@@ -31,7 +31,8 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-sm font-semibold tracking-normal text-foreground/75 transition-colors hover:text-foreground"
+              style={{ fontFamily: "Arial, sans-serif", fontSize: "1.05rem" }}
+              className="font-semibold tracking-normal text-foreground/75 transition-colors hover:text-foreground"
               activeProps={{ className: "text-foreground" }}
             >
               {item.label}
@@ -56,7 +57,8 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-3 text-sm font-semibold tracking-normal text-foreground/80"
+                style={{ fontFamily: "Arial, sans-serif", fontSize: "1.05rem" }}
+                className="py-3 font-semibold tracking-normal text-foreground/80"
               >
                 {item.label}
               </Link>
