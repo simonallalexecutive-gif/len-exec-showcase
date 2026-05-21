@@ -17,10 +17,13 @@ export function SiteHeader() {
       <div className="container-prose flex h-20 items-center justify-between">
         <Link
           to="/"
-          className="font-serif text-xl tracking-[0.18em] text-foreground"
+          className="font-serif text-xl text-foreground"
           onClick={() => setOpen(false)}
         >
-          LENNON<span className="text-muted-foreground"> · EXECUTIVE</span>
+          <span className="tracking-[0.22em]">LENNON</span>
+          <span className="ml-3 italic font-light tracking-wide text-foreground/70">
+            Executive
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">
