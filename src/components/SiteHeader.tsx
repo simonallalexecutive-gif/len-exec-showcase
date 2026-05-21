@@ -37,8 +37,8 @@ export function SiteHeader() {
               className="text-black transition-colors hover:opacity-70"
               style={{
                 fontFamily: 'Georgia, "Times New Roman", serif',
-                fontSize: "16px",
-                letterSpacing: "1.7pt",
+                fontSize: "12px",
+                letterSpacing: "normal",
                 fontVariant: "normal",
                 textTransform: "none",
               }}
@@ -69,8 +69,8 @@ export function SiteHeader() {
                 className="py-3 text-black"
                 style={{
                   fontFamily: 'Georgia, "Times New Roman", serif',
-                  fontSize: "16px",
-                  letterSpacing: "1.7pt",
+                  fontSize: "12px",
+                  letterSpacing: "normal",
                   fontVariant: "normal",
                   textTransform: "none",
                 }}
