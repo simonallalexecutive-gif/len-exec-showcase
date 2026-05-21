@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="container-prose grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="font-serif text-2xl">
-            <span className="tracking-[0.22em]">LENNON</span>
+            <span className="tracking-[0.22em] font-bold">LENNON</span>
             <span className="ml-3 font-light tracking-wide">
               Executive
             </span>
