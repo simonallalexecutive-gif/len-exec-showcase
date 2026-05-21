@@ -34,8 +34,11 @@ function Index() {
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               LENNON Executive est un cabinet de conseil stratégique et de chasse
               de têtes dédié aux acteurs du droit : cabinets d'avocats et
-              directions juridiques. Nous accompagnons les associés, dirigeants
-              et experts dans les moments décisifs de leur trajectoire.
+              directions juridiques.
+            </p>
+            <p className="mt-6 ml-auto max-w-xl text-right text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textAlign: "justify", textAlignLast: "right" }}>
+              Nous accompagnons les associés, dirigeants et experts dans les
+              moments décisifs de leur trajectoire.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-8">
               <Link
