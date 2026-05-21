@@ -20,10 +20,8 @@ export function SiteHeader() {
           className="font-serif text-xl text-foreground"
           onClick={() => setOpen(false)}
         >
-          <span className="font-bold" style={{ letterSpacing: "1.7px" }}>LENNON</span>
-          <span className="ml-3 font-light text-foreground/70" style={{ letterSpacing: "1.7px" }}>
-            EXECUTIVE
-          </span>
+          <span className="font-bold">LENNON</span>
+          <span className="ml-3 font-light text-foreground/70">EXECUTIVE</span>
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">

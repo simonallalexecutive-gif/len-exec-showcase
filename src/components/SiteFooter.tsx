@@ -6,10 +6,8 @@ export function SiteFooter() {
       <div className="container-prose grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="font-serif text-2xl">
-            <span className="font-bold" style={{ letterSpacing: "1.7px" }}>LENNON</span>
-            <span className="ml-3 font-light text-muted-foreground" style={{ letterSpacing: "1.7px" }}>
-              EXECUTIVE
-            </span>
+            <span className="font-bold">LENNON</span>
+            <span className="ml-3 font-light text-muted-foreground">EXECUTIVE</span>
           </div>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
             Conseil stratégique et chasse de têtes dédiés aux cabinets d'avocats
