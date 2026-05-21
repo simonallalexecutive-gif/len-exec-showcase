@@ -21,7 +21,7 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <span className="tracking-[0.22em]">LENNON</span>
-          <span className="ml-3 italic font-light tracking-wide text-foreground/70">
+          <span className="ml-3 font-light tracking-wide">
             Executive
           </span>
         </Link>
