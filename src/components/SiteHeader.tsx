@@ -20,7 +20,7 @@ export function SiteHeader() {
           className="font-serif text-xl text-foreground"
           onClick={() => setOpen(false)}
         >
-          <span className="tracking-[0.22em]">LENNON</span>
+          <span className="tracking-[0.22em] font-bold">LENNON</span>
           <span className="ml-3 font-light tracking-wide">
             Executive
           </span>
