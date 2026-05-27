@@ -21,50 +21,51 @@ function Index() {
     <>
       {/* Hero */}
       <section className="relative">
-        <div className="container-prose grid gap-16 pt-24 pb-32 md:grid-cols-12 md:pt-32 md:pb-40">
-          <div className="md:col-span-7">
-            <p className="eyebrow">Executive Search · Legal</p>
-            <h1 className="mt-8 font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
+        <div className="container-prose pt-24 pb-20 md:pt-32 md:pb-28">
+          <div className="max-w-4xl">
+            <p className="eyebrow">
+              Cabinet spécialisé dans l'<em className="italic">Executive Search</em> dédiée aux professionnels du Droit
+            </p>
+            <h1 className="mt-10 font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
               Expertise.
               <br />
               Confidentialité.
               <br />
               <em className="not-italic text-accent">Résultat.</em>
             </h1>
-            <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              SOA Partners est un cabinet de conseil stratégique et de chasse
-              de têtes dédié aux acteurs du droit : cabinets d'avocats et
-              directions juridiques.
-            </p>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Nous accompagnons les associés, dirigeants et experts dans les
-              moments décisifs de leur trajectoire.
-            </p>
-            <div className="mt-12 flex flex-wrap items-center gap-8">
-              <Link
-                to="/contact"
-                className="border border-foreground px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground transition-colors hover:bg-foreground hover:text-background"
-              >
-                Nous contacter
-              </Link>
-              <Link
-                to="/approche"
-                className="text-xs uppercase tracking-[0.22em] text-foreground/70 underline-offset-8 hover:text-foreground hover:underline"
-              >
-                Découvrir notre approche →
-              </Link>
-            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="md:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden border border-border/60">
-              <img
-                src={hero}
-                alt="Architecture institutionnelle d'un cabinet d'avocats"
-                width={1920}
-                height={1080}
-                className="h-full w-full object-cover"
-              />
+      {/* Immersive feature image */}
+      <section className="relative">
+        <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden md:h-[80vh]">
+          <img
+            src={hero}
+            alt="Architecture institutionnelle d'un cabinet d'avocats"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/20 to-background/40" />
+          <div className="container-prose relative flex h-full flex-col justify-end pb-12 md:pb-20">
+            <div className="max-w-2xl">
+              <p className="font-serif text-2xl leading-snug text-foreground md:text-3xl">
+                SOA Partners accompagne les associés, dirigeants et experts
+                dans les moments décisifs de leur trajectoire.
+              </p>
+              <div className="mt-10 flex flex-wrap items-center gap-8">
+                <Link
+                  to="/contact"
+                  className="border border-foreground bg-background/70 px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground backdrop-blur-sm transition-colors hover:bg-foreground hover:text-background"
+                >
+                  Nous contacter
+                </Link>
+                <Link
+                  to="/approche"
+                  className="text-xs uppercase tracking-[0.22em] text-foreground/80 underline-offset-8 hover:text-foreground hover:underline"
+                >
+                  Découvrir notre approche →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
