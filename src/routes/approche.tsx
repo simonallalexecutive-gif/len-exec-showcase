@@ -84,14 +84,17 @@ function ApprochePage() {
           </div>
           <div className="md:col-span-8">
             <h1 className="font-serif text-5xl leading-[1.05] text-foreground md:text-6xl">
-              Une méthode lente,
+              L'exigence du temps juste,
               <br />
-              au service de décisions justes.
+              au service de décisions structurantes.
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Le recrutement d'un associé ou d'un General Counsel engage
-              durablement une organisation. Notre méthodologie privilégie la
-              profondeur sur la rapidité, et la justesse sur l'effet.
+              Recruter un associé ou un General Counsel n'est pas un acte
+              ordinaire : c'est un choix qui engage durablement la trajectoire
+              d'une organisation. Notre méthodologie conjugue rigueur d'analyse,
+              discrétion absolue et profondeur de jugement, pour faire émerger
+              non pas le profil le plus visible, mais celui dont l'apport sera
+              le plus juste et le plus durable.
             </p>
           </div>
         </div>
