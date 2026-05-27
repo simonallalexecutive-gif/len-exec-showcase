@@ -4,11 +4,11 @@ export const Route = createFileRoute("/equipe")({
   component: EquipePage,
   head: () => ({
     meta: [
-      { title: "Équipe — LENNON Executive" },
+      { title: "Équipe — SOA Partners" },
       {
         name: "description",
         content:
-          "Simon Allal et Olivia Altar, associés fondateurs de LENNON Executive.",
+          "Simon Allal et Olivia Altar, associés fondateurs de SOA Partners.",
       },
     ],
   }),
@@ -22,7 +22,7 @@ const team = [
       "Après ses études de Droit à l'Université Paris II Panthéon-Assas, Simon poursuit son parcours avec un LL.M. à New York et un Master 2 Arbitrage et Commerce International de l'Université de Versailles. Il se forme ensuite au sein de cabinets d'affaires en arbitrage et contentieux.",
       "Au fil de ses expériences, il affine sa compréhension des trajectoires de marché et des équilibres d'association. Il s'oriente alors vers l'executive search et se forme au sein d'un cabinet anglo-saxon reconnu.",
       "En 2023, il rejoint W Executive, acteur de premier plan en Europe, afin de créer et développer la pratique parisienne dédiée au recrutement d'avocats d'affaires.",
-      "En fondant Lennon Executive, Simon répond à une conviction simple : celle d'un executive search qui ne soit pas seulement un intermédiaire, mais un véritable partenaire de trajectoires, au service d'un marché qu'il connaît de l'intérieur.",
+      "En fondant SOA Partners, Simon répond à une conviction simple : celle d'un executive search qui ne soit pas seulement un intermédiaire, mais un véritable partenaire de trajectoires, au service d'un marché qu'il connaît de l'intérieur.",
       "Il accompagne au quotidien collaborateurs, counsels et associés dans leurs évolutions, et intervient également auprès des cabinets dans leurs réflexions stratégiques.",
       "Son intervention repose sur un socle constant : éthique, loyauté, confiance et engagement.",
     ],
@@ -68,7 +68,7 @@ function EquipePage() {
               au service d'une même conviction.
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              LENNON Executive a été fondé par deux praticiens du droit devenus
+              SOA Partners a été fondé par deux praticiens du droit devenus
               chasseurs de têtes. De cette double culture naît une compréhension
               fine du métier d'avocat et de juriste d'entreprise.
             </p>

@@ -20,13 +20,13 @@ export function SiteHeader() {
           className="text-black"
           style={{
             fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
-            fontSize: "16px",
-            letterSpacing: "1.7pt",
+            fontSize: "20px",
+            letterSpacing: "2.1pt",
             textTransform: "uppercase",
           }}
           onClick={() => setOpen(false)}
         >
-          LENNON EXECUTIVE
+          SOA PARTNERS
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">

@@ -4,11 +4,11 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact — LENNON Executive" },
+      { title: "Contact — SOA Partners" },
       {
         name: "description",
         content:
-          "Contactez LENNON Executive pour un échange confidentiel autour d'une mission de recrutement ou d'une réflexion de carrière.",
+          "Contactez SOA Partners pour un échange confidentiel autour d'une mission de recrutement ou d'une réflexion de carrière.",
       },
     ],
   }),
@@ -39,10 +39,10 @@ function ContactPage() {
             <div>
               <p className="eyebrow mb-2">Email</p>
               <a
-                href="mailto:contact@lennon-executive.com"
+                href="mailto:contact@soa-partners.com"
                 className="text-sm text-foreground underline-offset-8 hover:underline"
               >
-                contact@lennon-executive.com
+                contact@soa-partners.com
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ function ContactPage() {
               const body = encodeURIComponent(
                 `${data.get("message") || ""}\n\n— ${data.get("name") || ""}\n${data.get("email") || ""}`,
               );
-              window.location.href = `mailto:contact@lennon-executive.com?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:contact@soa-partners.com?subject=${subject}&body=${body}`;
             }}
           >
             {[
