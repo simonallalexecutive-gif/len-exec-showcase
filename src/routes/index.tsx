@@ -24,20 +24,20 @@ function Index() {
     <>
       {/* Immersive hero with integrated text */}
       <section className="relative">
-        <div className="relative min-h-[88vh] w-full overflow-hidden">
+        <div className="relative min-h-[92vh] w-full overflow-hidden">
           <img
             src={hero}
             alt="Architecture institutionnelle d'un cabinet d'avocats"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          {/* Strong readability overlay: dark left → transparent right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40" />
+          {/* Soft, light fade — restore the original airy feel */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/55 to-background/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
 
-          <div className="container-prose relative flex min-h-[88vh] flex-col justify-center py-24 md:py-32">
-            <div className="max-w-3xl text-white">
+          <div className="container-prose relative flex min-h-[92vh] flex-col justify-center pt-32 pb-24 md:pt-40 md:pb-32">
+            <div className="max-w-3xl text-foreground">
               <p
-                className="text-[11px] uppercase text-white/90 md:text-xs"
+                className="text-[10px] uppercase text-foreground/80 md:text-[11px]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.28em",
@@ -49,21 +49,22 @@ function Index() {
               </p>
 
               <h1
-                className="mt-10 text-5xl leading-[1.05] text-white md:text-7xl"
+                className="mt-10 text-4xl leading-[1.1] text-foreground md:text-[3.6rem]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.04em",
+                  fontWeight: 300,
                 }}
               >
                 Expertise.
                 <br />
                 Confidentialité.
                 <br />
-                <span className="text-accent">Résultat.</span>
+                <span className="text-foreground/85">Résultat.</span>
               </h1>
 
               <p
-                className="mt-10 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
+                className="mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 SOA Partners est un cabinet de conseil stratégique et de chasse
@@ -71,7 +72,7 @@ function Index() {
                 directions juridiques.
               </p>
               <p
-                className="mt-5 max-w-xl text-base leading-relaxed text-white/85 md:text-lg"
+                className="mt-5 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 Nous accompagnons les associés, dirigeants et experts dans les
@@ -81,14 +82,14 @@ function Index() {
               <div className="mt-12 flex flex-wrap items-center gap-8">
                 <Link
                   to="/contact"
-                  className="border border-white px-8 py-4 text-xs uppercase tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black"
+                  className="border border-foreground bg-background/40 px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground backdrop-blur-sm transition-colors hover:bg-foreground hover:text-background"
                   style={{ fontFamily: copperplate }}
                 >
                   Nous contacter
                 </Link>
                 <Link
                   to="/approche"
-                  className="text-xs uppercase tracking-[0.22em] text-white/85 underline-offset-8 hover:text-white hover:underline"
+                  className="text-xs uppercase tracking-[0.22em] text-foreground/75 underline-offset-8 hover:text-foreground hover:underline"
                   style={{ fontFamily: copperplate }}
                 >
                   Découvrir notre approche →
