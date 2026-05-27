@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
 
 const copperplate = '"Copperplate", "Copperplate Gothic Light", serif';
 const inter = '"Inter", system-ui, sans-serif';
+const elegantSerif = '"Cormorant Garamond", "Didot", "Bodoni 72", serif';
 
 function Index() {
   return (
@@ -29,11 +30,11 @@ function Index() {
             src={hero}
             alt="Architecture institutionnelle d'un cabinet d'avocats"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ filter: "brightness(0.55) contrast(1.1) saturate(0.9)" }}
+            style={{ filter: "brightness(0.72) contrast(1.06) saturate(0.95)" }}
           />
-          {/* Darker, premium fade for stronger contrast with light text */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/35" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/70" />
+          {/* Balanced premium fade — readable but not too dark */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/55" />
 
           <div className="container-prose relative flex min-h-[92vh] flex-col justify-center pt-32 pb-24 md:pt-40 md:pb-32">
             <div className="max-w-3xl text-white">
@@ -151,8 +152,12 @@ function Index() {
                   {p.n}
                 </p>
                 <h3
-                  className="mt-6 text-2xl text-foreground"
-                  style={{ fontFamily: copperplate, letterSpacing: "0.03em" }}
+                  className="mt-6 text-[1.7rem] leading-tight text-foreground"
+                  style={{
+                    fontFamily: elegantSerif,
+                    letterSpacing: "0.01em",
+                    fontWeight: 500,
+                  }}
                 >
                   {p.t}
                 </h3>
