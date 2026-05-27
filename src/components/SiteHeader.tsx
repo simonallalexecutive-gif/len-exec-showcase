@@ -13,7 +13,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 right-0 left-0 z-40 bg-gradient-to-b from-background/70 via-background/30 to-transparent backdrop-blur-[2px]">
+    <header className="sticky top-0 z-40 -mb-20 bg-gradient-to-b from-background/75 via-background/35 to-transparent backdrop-blur-[2px]">
       <div className="container-prose flex h-20 items-center justify-between">
         <Link
           to="/"
