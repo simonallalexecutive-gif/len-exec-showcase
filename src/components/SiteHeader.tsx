@@ -37,7 +37,7 @@ export function SiteHeader() {
               className="text-black transition-colors hover:opacity-70"
               style={{
                 fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
-                fontSize: "12px",
+                fontSize: "14px",
                 letterSpacing: "normal",
                 fontVariant: "normal",
                 textTransform: "none",
@@ -69,7 +69,7 @@ export function SiteHeader() {
                 className="py-3 text-black"
                 style={{
                   fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
-                  fontSize: "12px",
+                  fontSize: "14px",
                   letterSpacing: "normal",
                   fontVariant: "normal",
                   textTransform: "none",
