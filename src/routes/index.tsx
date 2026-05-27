@@ -29,15 +29,16 @@ function Index() {
             src={hero}
             alt="Architecture institutionnelle d'un cabinet d'avocats"
             className="absolute inset-0 h-full w-full object-cover"
+            style={{ filter: "brightness(0.55) contrast(1.1) saturate(0.9)" }}
           />
-          {/* Soft, light fade — restore the original airy feel */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/55 to-background/10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
+          {/* Darker, premium fade for stronger contrast with light text */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/35" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/70" />
 
           <div className="container-prose relative flex min-h-[92vh] flex-col justify-center pt-32 pb-24 md:pt-40 md:pb-32">
-            <div className="max-w-3xl text-foreground">
+            <div className="max-w-3xl text-white">
               <p
-                className="text-[10px] uppercase text-foreground/80 md:text-[11px]"
+                className="text-[10px] uppercase text-white/85 md:text-[11px]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.28em",
@@ -49,22 +50,23 @@ function Index() {
               </p>
 
               <h1
-                className="mt-10 text-4xl leading-[1.1] text-foreground md:text-[3.6rem]"
+                className="mt-10 text-4xl leading-[1.1] text-white md:text-[3.6rem]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.04em",
                   fontWeight: 300,
+                  textShadow: "0 2px 24px rgba(0,0,0,0.45)",
                 }}
               >
                 Expertise.
                 <br />
                 Confidentialité.
                 <br />
-                <span className="text-foreground/85">Résultat.</span>
+                <span className="text-white/90">Résultat.</span>
               </h1>
 
               <p
-                className="mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg"
+                className="mt-10 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 SOA Partners est un cabinet de conseil stratégique et de chasse
@@ -72,7 +74,7 @@ function Index() {
                 directions juridiques.
               </p>
               <p
-                className="mt-5 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg"
+                className="mt-5 max-w-xl text-base leading-relaxed text-white/80 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 Nous accompagnons les associés, dirigeants et experts dans les
@@ -82,14 +84,14 @@ function Index() {
               <div className="mt-12 flex flex-wrap items-center gap-8">
                 <Link
                   to="/contact"
-                  className="border border-foreground bg-background/40 px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground backdrop-blur-sm transition-colors hover:bg-foreground hover:text-background"
+                  className="border border-white/90 bg-white/5 px-8 py-4 text-xs uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-black"
                   style={{ fontFamily: copperplate }}
                 >
                   Nous contacter
                 </Link>
                 <Link
                   to="/approche"
-                  className="text-xs uppercase tracking-[0.22em] text-foreground/75 underline-offset-8 hover:text-foreground hover:underline"
+                  className="text-xs uppercase tracking-[0.22em] text-white/80 underline-offset-8 hover:text-white hover:underline"
                   style={{ fontFamily: copperplate }}
                 >
                   Découvrir notre approche →
