@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
-import parisVideo from "@/assets/paris-aerial.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -19,7 +18,6 @@ export const Route = createFileRoute("/")({
 
 const copperplate = '"Copperplate", "Copperplate Gothic Light", serif';
 const inter = '"Inter", system-ui, sans-serif';
-const elegantSerif = '"Cormorant Garamond", "Didot", "Bodoni 72", serif';
 
 function Index() {
   return (
@@ -27,25 +25,19 @@ function Index() {
       {/* Immersive hero with integrated text */}
       <section className="relative">
         <div className="relative min-h-[92vh] w-full overflow-hidden">
-          <video
-            src={parisVideo.url}
-            poster={hero}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
+          <img
+            src={hero}
+            alt="Architecture institutionnelle d'un cabinet d'avocats"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ filter: "brightness(0.7) contrast(1.08) saturate(0.95)" }}
           />
-          {/* Balanced premium fade — readable but not too dark */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/55" />
+          {/* Soft, light fade — restore the original airy feel */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/55 to-background/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
 
           <div className="container-prose relative flex min-h-[92vh] flex-col justify-center pt-32 pb-24 md:pt-40 md:pb-32">
-            <div className="max-w-3xl text-white">
+            <div className="max-w-3xl text-foreground">
               <p
-                className="text-[10px] uppercase text-white/85 md:text-[11px]"
+                className="text-[10px] uppercase text-foreground/80 md:text-[11px]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.28em",
@@ -57,23 +49,22 @@ function Index() {
               </p>
 
               <h1
-                className="mt-10 text-4xl leading-[1.1] text-white md:text-[3.6rem]"
+                className="mt-10 text-4xl leading-[1.1] text-foreground md:text-[3.6rem]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.04em",
                   fontWeight: 300,
-                  textShadow: "0 2px 24px rgba(0,0,0,0.45)",
                 }}
               >
                 Expertise.
                 <br />
                 Confidentialité.
                 <br />
-                <span className="text-white/90">Résultat.</span>
+                <span className="text-foreground/85">Résultat.</span>
               </h1>
 
               <p
-                className="mt-10 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
+                className="mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 SOA Partners est un cabinet de conseil stratégique et de chasse
@@ -81,7 +72,7 @@ function Index() {
                 directions juridiques.
               </p>
               <p
-                className="mt-5 max-w-xl text-base leading-relaxed text-white/80 md:text-lg"
+                className="mt-5 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 Nous accompagnons les associés, dirigeants et experts dans les
@@ -91,14 +82,14 @@ function Index() {
               <div className="mt-12 flex flex-wrap items-center gap-8">
                 <Link
                   to="/contact"
-                  className="border border-white/90 bg-white/5 px-8 py-4 text-xs uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-black"
+                  className="border border-foreground bg-background/40 px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground backdrop-blur-sm transition-colors hover:bg-foreground hover:text-background"
                   style={{ fontFamily: copperplate }}
                 >
                   Nous contacter
                 </Link>
                 <Link
                   to="/approche"
-                  className="text-xs uppercase tracking-[0.22em] text-white/80 underline-offset-8 hover:text-white hover:underline"
+                  className="text-xs uppercase tracking-[0.22em] text-foreground/75 underline-offset-8 hover:text-foreground hover:underline"
                   style={{ fontFamily: copperplate }}
                 >
                   Découvrir notre approche →
@@ -158,12 +149,8 @@ function Index() {
                   {p.n}
                 </p>
                 <h3
-                  className="mt-6 text-[1.7rem] leading-tight text-foreground"
-                  style={{
-                    fontFamily: elegantSerif,
-                    letterSpacing: "0.01em",
-                    fontWeight: 500,
-                  }}
+                  className="mt-6 text-2xl text-foreground"
+                  style={{ fontFamily: copperplate, letterSpacing: "0.03em" }}
                 >
                   {p.t}
                 </h3>
