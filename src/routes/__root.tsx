@@ -74,10 +74,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LENNON Executive — Chasse de têtes pour les acteurs du droit" },
+      { title: "SOA Partners — Chasse de têtes pour les acteurs du droit" },
       { name: "description", content: "Cabinet de conseil stratégique et de chasse de têtes dédié aux cabinets d'avocats et directions juridiques." },
-      { name: "author", content: "LENNON Executive" },
-      { property: "og:title", content: "LENNON Executive" },
+      { name: "author", content: "SOA Partners" },
+      { property: "og:title", content: "SOA Partners" },
       { property: "og:description", content: "Cabinet de chasse de têtes pour les acteurs du droit." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

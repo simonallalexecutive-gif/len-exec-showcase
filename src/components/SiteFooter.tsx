@@ -14,7 +14,7 @@ export function SiteFooter() {
               textTransform: "uppercase",
             }}
           >
-            LENNON EXECUTIVE
+            SOA PARTNERS
           </div>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
             Conseil stratégique et chasse de têtes dédiés aux cabinets d'avocats
@@ -36,14 +36,14 @@ export function SiteFooter() {
           <p className="eyebrow mb-4">Cabinet</p>
           <ul className="space-y-2 text-sm text-foreground/75">
             <li>Paris, France</li>
-            <li>contact@lennon-executive.com</li>
+            <li>contact@soa-partners.com</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-border/60">
         <div className="container-prose flex flex-col items-start justify-between gap-3 py-6 text-xs text-muted-foreground md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} LENNON Executive. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} SOA Partners. Tous droits réservés.</p>
           <p className="tracking-[0.18em] uppercase">Discretion · Excellence · Confiance</p>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const Route = createFileRoute("/approche")({
   component: ApprochePage,
   head: () => ({
     meta: [
-      { title: "Notre approche — LENNON Executive" },
+      { title: "Notre approche — SOA Partners" },
       {
         name: "description",
         content:

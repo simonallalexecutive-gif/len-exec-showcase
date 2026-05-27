@@ -5,7 +5,7 @@ export const Route = createFileRoute("/activite")({
   component: ActivitePage,
   head: () => ({
     meta: [
-      { title: "Activité — LENNON Executive" },
+      { title: "Activité — SOA Partners" },
       {
         name: "description",
         content:
@@ -82,7 +82,7 @@ function ActivitePage() {
               une même exigence.
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              LENNON Executive intervient sur trois terrains complémentaires,
+              SOA Partners intervient sur trois terrains complémentaires,
               tous structurés autour d'une connaissance intime du marché juridique
               et d'une approche strictement confidentielle.
             </p>

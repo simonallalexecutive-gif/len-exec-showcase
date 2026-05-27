@@ -26,7 +26,7 @@ export function SiteHeader() {
           }}
           onClick={() => setOpen(false)}
         >
-          LENNON EXECUTIVE
+          SOA PARTNERS
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">

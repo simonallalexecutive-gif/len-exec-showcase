@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "LENNON Executive — Chasse de têtes pour le droit" },
+      { title: "SOA Partners — Chasse de têtes pour le droit" },
       {
         name: "description",
         content:
@@ -32,7 +32,7 @@ function Index() {
               <em className="not-italic text-accent">Résultat.</em>
             </h1>
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              LENNON Executive est un cabinet de conseil stratégique et de chasse
+              SOA Partners est un cabinet de conseil stratégique et de chasse
               de têtes dédié aux acteurs du droit : cabinets d'avocats et
               directions juridiques.
             </p>
