@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
+import parisVideo from "@/assets/paris-aerial.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -26,11 +27,16 @@ function Index() {
       {/* Immersive hero with integrated text */}
       <section className="relative">
         <div className="relative min-h-[92vh] w-full overflow-hidden">
-          <img
-            src={hero}
-            alt="Architecture institutionnelle d'un cabinet d'avocats"
+          <video
+            src={parisVideo.url}
+            poster={hero}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ filter: "brightness(0.72) contrast(1.06) saturate(0.95)" }}
+            style={{ filter: "brightness(0.7) contrast(1.08) saturate(0.95)" }}
           />
           {/* Balanced premium fade — readable but not too dark */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15" />
