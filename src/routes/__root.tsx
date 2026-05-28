@@ -77,10 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "SOA Partners — Chasse de têtes pour les acteurs du droit" },
       { name: "description", content: "Cabinet de conseil stratégique et de chasse de têtes dédié aux cabinets d'avocats et directions juridiques." },
       { name: "author", content: "SOA Partners" },
-      { property: "og:title", content: "SOA Partners" },
-      { property: "og:description", content: "Cabinet de chasse de têtes pour les acteurs du droit." },
+      { property: "og:title", content: "SOA Partners — Chasse de têtes pour les acteurs du droit" },
+      { property: "og:description", content: "Cabinet de conseil stratégique et de chasse de têtes dédié aux cabinets d'avocats et directions juridiques." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "SOA Partners — Chasse de têtes pour les acteurs du droit" },
+      { name: "twitter:description", content: "Cabinet de conseil stratégique et de chasse de têtes dédié aux cabinets d'avocats et directions juridiques." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/741248f0-3940-4219-93cc-ceee055bc15a/id-preview-22c16fa1--733e6e59-25fc-4044-8815-29f81182f4e3.lovable.app-1779919197273.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/741248f0-3940-4219-93cc-ceee055bc15a/id-preview-22c16fa1--733e6e59-25fc-4044-8815-29f81182f4e3.lovable.app-1779919197273.png" },
     ],
     links: [
       {
