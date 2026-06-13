@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import hero from "@/assets/hero.jpg";
+import heroTexture from "@/assets/soa-landing-texture.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -22,20 +22,35 @@ const inter = '"Inter", system-ui, sans-serif';
 function Index() {
   return (
     <>
-      {/* Immersive hero with integrated text */}
+      {/* Immersive opening inspired by the supplied art direction */}
       <section className="relative">
         <div className="relative min-h-[92vh] w-full overflow-hidden">
           <img
-            src={hero}
-            alt="Architecture institutionnelle d'un cabinet d'avocats"
+            src={heroTexture}
+            alt="Texture abstraite aux nuances brunes et ambrées"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          {/* Soft, light fade — restore the original airy feel */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/55 to-background/10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/15 via-transparent to-foreground/25" />
 
-          <div className="container-prose relative flex min-h-[92vh] flex-col justify-center pt-32 pb-24 md:pt-40 md:pb-32">
-            <div className="max-w-3xl text-foreground">
+          <div className="container-prose relative flex min-h-[92vh] items-center justify-center pt-20">
+            <h1
+              className="text-center text-[clamp(2.15rem,7.6vw,5rem)] leading-none text-hero-gold"
+              style={{
+                fontFamily: copperplate,
+                fontWeight: 300,
+                letterSpacing: "0.015em",
+              }}
+            >
+              SOA PARTNERS
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      {/* Introductory copy retained below the opening visual */}
+      <section className="border-t border-border/60">
+        <div className="container-prose py-24 md:py-32">
+          <div className="max-w-3xl text-foreground">
               <p
                 className="text-[10px] uppercase text-foreground/80 md:text-[11px]"
                 style={{
@@ -48,7 +63,7 @@ function Index() {
                 professionnels du Droit
               </p>
 
-              <h1
+              <h2
                 className="mt-10 text-4xl leading-[1.1] text-foreground md:text-[3.6rem]"
                 style={{
                   fontFamily: copperplate,
@@ -61,7 +76,7 @@ function Index() {
                 Confidentialité.
                 <br />
                 <span className="text-foreground/85">Résultat.</span>
-              </h1>
+              </h2>
 
               <p
                 className="mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg"
@@ -97,7 +112,6 @@ function Index() {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Statement */}
