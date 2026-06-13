@@ -59,7 +59,7 @@ function Index() {
                 <br />
                 Confidentialité.
                 <br />
-                <span className="text-hero-gold">Résultat.</span>
+                <span className="text-white">Résultat.</span>
               </h1>
 
               <p
