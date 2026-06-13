@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -11,13 +11,15 @@ const nav = [
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const isHome = useLocation({ select: (location) => location.pathname === "/" });
+  const headerText = isHome ? "text-hero-gold" : "text-foreground";
 
   return (
-    <header className="sticky top-0 z-40 -mb-20 bg-gradient-to-b from-background/75 via-background/35 to-transparent backdrop-blur-[2px]">
+    <header className={`sticky top-0 z-40 -mb-20 ${isHome ? "bg-gradient-to-b from-foreground/55 via-foreground/20 to-transparent" : "bg-gradient-to-b from-background/75 via-background/35 to-transparent"}`}>
       <div className="container-prose flex h-20 items-center justify-between">
         <Link
           to="/"
-          className="text-black"
+          className={headerText}
           style={{
             fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
             fontSize: "20px",
@@ -34,7 +36,7 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-black transition-colors hover:opacity-70"
+              className={`${headerText} transition-colors hover:opacity-70`}
               style={{
                 fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
                 fontSize: "14px",
@@ -51,7 +53,7 @@ export function SiteHeader() {
 
         <button
           aria-label="Menu"
-          className="md:hidden"
+          className={`md:hidden ${headerText}`}
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -59,14 +61,14 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border/60 md:hidden">
+        <div className={`border-t border-border/30 md:hidden ${isHome ? "bg-foreground/90" : "bg-background/95"}`}>
           <nav className="container-prose flex flex-col py-6">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-3 text-black"
+                className={`py-3 ${headerText}`}
                 style={{
                   fontFamily: '"Copperplate", "Copperplate Gothic Light", serif',
                   fontSize: "14px",
