@@ -30,29 +30,13 @@ function Index() {
             alt="Texture abstraite aux nuances brunes et ambrées"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-foreground/15 via-transparent to-foreground/25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/55 to-foreground/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/25 via-transparent to-foreground/55" />
 
-          <div className="container-prose relative flex min-h-[92vh] items-center justify-center pt-20">
-            <h1
-              className="text-center text-[clamp(2.15rem,7.6vw,5rem)] leading-none text-hero-gold"
-              style={{
-                fontFamily: copperplate,
-                fontWeight: 300,
-                letterSpacing: "0.015em",
-              }}
-            >
-              SOA PARTNERS
-            </h1>
-          </div>
-        </div>
-      </section>
-
-      {/* Introductory copy retained below the opening visual */}
-      <section className="border-t border-border/60">
-        <div className="container-prose py-24 md:py-32">
-          <div className="max-w-3xl text-foreground">
+          <div className="container-prose relative flex min-h-[92vh] items-center pt-28 pb-16 md:pt-36 md:pb-24">
+            <div className="max-w-3xl text-background">
               <p
-                className="text-[10px] uppercase text-foreground/80 md:text-[11px]"
+                className="max-w-2xl text-[10px] uppercase text-background/80 md:text-[11px]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.28em",
@@ -63,8 +47,8 @@ function Index() {
                 professionnels du Droit
               </p>
 
-              <h2
-                className="mt-10 text-4xl leading-[1.1] text-foreground md:text-[3.6rem]"
+              <h1
+                className="mt-8 text-4xl leading-[1.1] text-background md:mt-10 md:text-[3.6rem]"
                 style={{
                   fontFamily: copperplate,
                   letterSpacing: "0.04em",
@@ -75,11 +59,11 @@ function Index() {
                 <br />
                 Confidentialité.
                 <br />
-                <span className="text-foreground/85">Résultat.</span>
-              </h2>
+                <span className="text-hero-gold">Résultat.</span>
+              </h1>
 
               <p
-                className="mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg"
+                className="mt-8 max-w-xl text-sm leading-relaxed text-background/85 md:mt-10 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 SOA Partners est un cabinet de conseil stratégique et de chasse
@@ -87,24 +71,24 @@ function Index() {
                 directions juridiques.
               </p>
               <p
-                className="mt-5 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg"
+                className="mt-4 max-w-xl text-sm leading-relaxed text-background/80 md:mt-5 md:text-lg"
                 style={{ fontFamily: inter }}
               >
                 Nous accompagnons les associés, dirigeants et experts dans les
                 moments décisifs de leur trajectoire.
               </p>
 
-              <div className="mt-12 flex flex-wrap items-center gap-8">
+              <div className="mt-8 flex flex-wrap items-center gap-6 md:mt-12 md:gap-8">
                 <Link
                   to="/contact"
-                  className="border border-foreground bg-background/40 px-8 py-4 text-xs uppercase tracking-[0.22em] text-foreground backdrop-blur-sm transition-colors hover:bg-foreground hover:text-background"
+                  className="border border-background/70 bg-foreground/15 px-7 py-3.5 text-xs uppercase tracking-[0.22em] text-background backdrop-blur-sm transition-colors hover:bg-background hover:text-foreground md:px-8 md:py-4"
                   style={{ fontFamily: copperplate }}
                 >
                   Nous contacter
                 </Link>
                 <Link
                   to="/approche"
-                  className="text-xs uppercase tracking-[0.22em] text-foreground/75 underline-offset-8 hover:text-foreground hover:underline"
+                  className="text-xs uppercase tracking-[0.22em] text-background/75 underline-offset-8 hover:text-background hover:underline"
                   style={{ fontFamily: copperplate }}
                 >
                   Découvrir notre approche →
@@ -112,6 +96,7 @@ function Index() {
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Statement */}
